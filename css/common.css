@@ -1,0 +1,98 @@
+@charset "utf-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4,h5,h6,form,fieldset,legend,img,input,span,em,div{ margin:0; padding:0; }
+a{text-decoration:none;}
+img{display:block;border:0;}
+li{list-style:none;}
+body{font-family:"微软雅黑"}
+input{border:0;}
+
+
+
+*{margin: 0;padding: 0;}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}			
+body{
+	background-color: #292929;
+}
+.total-top{
+	width: 100%;
+	height: 74px;
+
+}
+	.top{
+		width: 990px;
+		padding: 24px 60px 20px 30px;
+		height: 30px;
+		margin: 0 auto;
+	background-color: #292929;
+		
+	}
+		.logo{
+			float: left;
+			width: 150px;
+			height: 100%;
+		}
+		.logo img{
+			width: 100px;
+			height: 30px;
+		}
+	.download{
+		float: left;
+		width: 95px;
+		height: 30px;
+		line-height: 30px;
+		font-size:16px ;
+		padding-left: 15px;
+		color: #fff;
+	}
+	.top-ul{
+		float: left;
+		height: 30px;
+		width: 450px;
+	}
+		.top-ul li{
+			margin: 0 35px 0 35px;
+			text-align: center;
+			float: left;
+			position: relative;
+		}
+			.top-ul li a{
+				display: block;
+				text-decoration: none;
+				/*margin-top: px;*/
+				/*height: 16px;*/
+				line-height: 30px;
+				font-size: 16px;
+				color: #fff;
+			}
+			.top-ul li em{
+				  display:none;
+				  position: absolute;
+				  left: 50%;
+				  transform: translateX(-50%);
+				  height:6px;
+				  width:6px;
+				  border-radius:50%;
+				  background-color:#fdd000;
+			}
+	.login{
+		float: right;
+		height: 30px;
+		color: #fff;
+		
+	}
+		.login a{
+			margin: 0 5px 0 5px;
+			text-decoration: none;
+			line-height: 30px;
+			font-size: 16px;
+			color: #fff;
+		}
+	
+
+			
+/* CSS Document */
+

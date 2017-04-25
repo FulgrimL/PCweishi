@@ -54,6 +54,7 @@ body{
 		height: 130px;
 		width: 130px;
 		position: absolute;
+		z-index: 200;
 		left: -20px;
 		bottom: -160px;
 	}
@@ -74,8 +75,6 @@ body{
 			.top-ul li a{
 				display: block;
 				text-decoration: none;
-				/*margin-top: px;*/
-				/*height: 16px;*/
 				line-height: 30px;
 				font-size: 16px;
 				color: #fff;

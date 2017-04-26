@@ -5,7 +5,6 @@
   width: 840px;
   margin: 0 auto;
   padding: 35px 120px;
-  border-top: 1px solid #fdd000;
 }
 .search-nav {
   margin: 0 auto;
@@ -141,7 +140,7 @@
   width: 100%;
 }
 .search-user ul li {
-  widows: 100%;
+  width: 100%;
   margin-top: 30px;
   height: 72px;
 }

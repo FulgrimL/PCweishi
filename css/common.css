@@ -23,12 +23,13 @@ body{
 
 }
 	.top{
-		width: 990px;
+		/*width: 990px;*/
+		/*padding: 24px 60px 20px 30px;*/
+		width: 1110px;
 		padding: 24px 60px 20px 30px;
 		height: 30px;
 		margin: 0 auto;
-	background-color: #292929;
-		
+		background-color: #292929;
 	}
 		.logo{
 			float: left;
@@ -39,8 +40,8 @@ body{
 			width: 100px;
 			height: 30px;
 		}
-	.download{
-		float: left;
+		.download{
+		float: left;vvvvvvvvvv
 		width: 95px;
 		height: 30px;
 		line-height: 30px;
@@ -49,7 +50,7 @@ body{
 		color: #fff;
 		position: relative;
 	}
-	.download img{
+		.download img{
 		display: none;
 		height: 130px;
 		width: 130px;
@@ -102,6 +103,13 @@ body{
 			font-size: 16px;
 			color: #fff;
 		}
+		
+	.top-bot{
+		height: 0px;
+		width: 1080px;
+		margin: 0 auto;
+    border-top: 1px solid #fdd000;
+	}
 	
 
 			

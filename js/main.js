@@ -54,6 +54,24 @@ window.onload=function(){
 	$("dt").bind("mouseleave",function(){
 		$(".live-mask").slideDown();
 	});
+//栏目页
+//	$(".pp-vedio-1").eq(0).css("margin-left","37px");
 	
 	
 }
+
+var mySwiper = new Swiper('.swiper-container', {
+    slidesPerView :3.1,
+    freeMode : true,
+    loop:false,
+    prevButton:'.swiper-button-prev',
+	nextButton:'.swiper-button-next',
+});
+
+var mySwiper2 = new Swiper('.swiper-container2', {
+    slidesPerView :5,
+    freeMode : true,
+    loop:false,
+    prevButton:'.swiper-button-prev',
+	nextButton:'.swiper-button-next',
+})

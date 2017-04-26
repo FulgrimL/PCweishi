@@ -1,0 +1,228 @@
+.programa-content-total{
+    width: 100%;
+    .programa-content{
+        width:1080px;
+        margin: 0 auto;
+        padding-top: 35px;
+        .programa-usercard{
+            height:90px ;
+            width:840px;
+            margin: 0 auto;
+            margin-top:10px;
+            img{
+                height: 90px;
+                width: 90px;
+                float: left;
+            }
+            .programa-user-h{
+                height: 90px;
+                float: left;
+                margin-left:22px ;
+                h1{
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 24px;
+                    font-weight: normal;
+                    color: #FFFFFF;
+                }
+                h2{
+                    height:30px;
+                    line-height:30px;
+                    font-size:14px;
+                    font-weight: normal;
+                    color: #999999;
+                }
+                h3{
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 18px;
+                    font-weight: normal;
+                    color: #FFFFFF;
+                }
+            }
+            
+        }
+        .programa-control{
+        height: 37px;
+        width: 840px;
+        margin: 35px auto;
+        ul{
+            width: 220px;
+            margin: 0 auto;
+            height: 37px;
+            li{
+                width: 110px;
+                height: 37px;
+                float: left;
+                text-align: center;
+                position: relative;
+                span{
+                        display: block;
+                        line-height: 16px;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                em{
+                      display: none;
+                      position: absolute;
+                      bottom: 7px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      height:6px;
+                      width:6px;
+                      border-radius:50%;
+                      background-color:#fdd000;
+                }
+            }
+            li:nth-of-type(1){
+                span{
+                    color: #fdd000;
+                }
+                em{
+                    display: inline-block;
+                }
+            }
+        }
+
+    }
+    
+    .programa-middle{
+//        box-sizing:border-box;
+//        padding-left:0.2rem;
+//        padding-right:0.2rem;
+          height:150px;
+          width:960px;
+          margin: 0 auto;
+          overflow: hidden;
+          position: relative;
+          .swiper-button-prev{
+                background-color: #292929;
+                background-image: url(../img/left-btn.png);
+                background-position-y: 51px;
+                position: absolute;
+//              margin-right: 30px;
+                margin:0 ;
+                z-index: 300;
+                height: 150px;
+                width: 60px;
+                top: 0;
+                left: 0;
+            }
+            .swiper-button-next{
+                background-color: #292929;
+                background-image: url(../img/right-btn.png);
+                background-position-y: 51px;
+//              margin-left: 30px;
+                margin:0 ;
+                position: absolute;
+                height: 150px;
+                width: 60px;
+                top: 0;
+                right: 0;
+            }
+          
+    }
+    
+//  视频
+    .pp-content{
+        width: 840px;
+        margin: 0 auto;
+        height: 150px;
+
+    }
+            .pp-vedio-1{
+              position:relative;
+              height:150px;
+              width:265px;
+              margin-right:15px;
+              img{
+                 height:150px;
+                 width:100%; 
+              }
+            }
+            
+            
+            .mask2{
+                position: absolute;
+                top:0;
+                left:0;
+                z-index:10;
+                height: 150px;
+                width: 100%;
+                background:black;
+                opacity: 0.4;
+            }
+            .pp-vedio-ti{
+              position:absolute;
+              left:0;
+              top: 0;
+              z-index:20;
+              padding-top:45px;
+              width:100%;
+              text-align:center;
+            }
+            .pp-vedio-ti h1{
+                font-size:14px;
+                color: #fff;
+                line-height:14px;
+                margin-bottom: 7px;
+            }
+            .pp-vedio-ti h2{
+                font-weight:normal;
+                font-size:10px;
+                margin-bottom:12px;
+                color:#fff;
+                line-height:10px;
+            }
+            .pp-vedio-ti h3{
+                font-weight:normal;
+                font-size:12px;
+                color:#fff;
+                line-height:12px;
+            }
+            
+            
+//直播
+    .pp-live-1{
+              position:relative;
+              height:4.9rem;
+              width:4.9rem;
+              margin-right:0.2rem;
+            }
+            
+            .pp-img1{
+              height:100%;
+              width:100%;
+              position: relative;
+              background-color: pink;
+            }
+            .pp-img1 img{
+              height:100%;
+              width:100%;
+            }
+            .pp-img1 a{
+                display: block;
+              height:0.9rem;
+              width:0.9rem;
+              position: absolute;
+              left:50%;
+              top: 50%;
+              background-image: url(../img/bf.png);
+              background-size: cover;
+              -webkit-transform: translateX(-0.45rem);
+                 -moz-transform: translateX(-0.45rem);
+                  -ms-transform: translateX(-0.45rem);
+                   -o-transform: translateX(-0.45rem);
+                      transform: translateX(-0.45rem) translateY(-0.45rem);
+            }
+            .pp-img1 a img{
+              width:0.9rem;
+              height:0.9rem;
+            }
+            
+          
+    
+    
+    
+    }
+}

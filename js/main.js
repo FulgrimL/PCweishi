@@ -54,24 +54,61 @@ window.onload=function(){
 	$("dt").bind("mouseleave",function(){
 		$(".live-mask").slideDown();
 	});
-//栏目页
-//	$(".pp-vedio-1").eq(0).css("margin-left","37px");
 	
+	
+//栏目页
+	$(".programa-control").find("ul").find("li").eq(0).click(function(){
+		$(".programa-control").find("ul").find("li").find("span").css("color","#fff");
+		$(".programa-control").find("ul").find("li").find("em").css("display","none");
+		$(this).find("em").css("display","inline-block");
+		$(this).find("span").css("color","#fdd000");
+		$(".pp-content2").css("display","none");
+		$(".pp-content").css("display","block");
+		$(".pmp-btn1").css("display","block");
+		$(".pmp-btn2").css("display","none");
+		$(".pmn-btn1").css("display","block");
+		$(".pmn-btn2").css("display","none");
+	});
+	$(".programa-control").find("ul").find("li").eq(1).click(function(){
+		$(".programa-control").find("ul").find("li").find("span").css("color","#fff");
+		$(".programa-control").find("ul").find("li").find("em").css("display","none");
+		$(this).find("em").css("display","inline-block");
+		$(this).find("span").css("color","#fdd000");
+		$(".pp-content").css("display","none");
+		$(".pp-content2").css("display","block");
+		$(".pmp-btn1").css("display","none");
+		$(".pmp-btn2").css("display","block");
+		$(".pmn-btn1").css("display","none");
+		$(".pmn-btn2").css("display","block");
+	});
+	$(".pmp-btn1").click(function(){
+		console.log("p-1");
+	})
+	$(".pmp-btn2").click(function(){
+		console.log("p-2");
+	})
+	$(".pmn-btn1").click(function(){
+		console.log("n-1");
+	})
+	$(".pmn-btn2").click(function(){
+		console.log("n-2");
+	})
+
 	
 }
-
-var mySwiper = new Swiper('.swiper-container', {
-    slidesPerView :3.1,
+	var mySwiper = new Swiper('.pp-content', {
     freeMode : true,
     loop:false,
-    prevButton:'.swiper-button-prev',
-	nextButton:'.swiper-button-next',
+    prevButton:'.pmp-btn1',
+	nextButton:'.pmn-btn1',
+});
+var mySwiper2 = new Swiper('.pp-content2', {
+
+    freeMode : true,
+    loop:false,
+    prevButton:'.pmp-btn2',
+	nextButton:'.pmn-btn2',
+
+
 });
 
-var mySwiper2 = new Swiper('.swiper-container2', {
-    slidesPerView :5,
-    freeMode : true,
-    loop:false,
-    prevButton:'.swiper-button-prev',
-	nextButton:'.swiper-button-next',
-})

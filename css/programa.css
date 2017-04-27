@@ -90,7 +90,7 @@
   overflow: hidden;
   position: relative;
 }
-.programa-content-total .programa-content .programa-middle .swiper-button-prev {
+.programa-content-total .programa-content .programa-middle .pp-btn1 {
   background-color: #292929;
   background-image: url(../img/left-btn.png);
   background-position-y: 51px;
@@ -102,10 +102,11 @@
   top: 0;
   left: 0;
 }
-.programa-content-total .programa-content .programa-middle .swiper-button-next {
+.programa-content-total .programa-content .programa-middle .pp-btn2 {
   background-color: #292929;
   background-image: url(../img/right-btn.png);
   background-position-y: 51px;
+  z-index: 300;
   margin: 0 ;
   position: absolute;
   height: 150px;
@@ -113,12 +114,26 @@
   top: 0;
   right: 0;
 }
+.programa-content-total .programa-content .programa-middle .pmp-btn1 {
+  z-index: 300;
+}
+.programa-content-total .programa-content .programa-middle .pmp-btn2 {
+  z-index: 200;
+}
+.programa-content-total .programa-content .programa-middle .pmn-btn1 {
+  z-index: 300;
+}
+.programa-content-total .programa-content .programa-middle .pmn-btn2 {
+  z-index: 200;
+}
 .programa-content-total .programa-content .pp-content {
+  display: block;
   width: 840px;
   margin: 0 auto;
   height: 150px;
 }
 .programa-content-total .programa-content .pp-vedio-1 {
+  float: left;
   position: relative;
   height: 150px;
   width: 265px;
@@ -166,11 +181,18 @@
   color: #fff;
   line-height: 12px;
 }
+.programa-content-total .programa-content .pp-content2 {
+  display: block;
+  width: 840px;
+  margin: 0 auto;
+  height: 150px;
+}
 .programa-content-total .programa-content .pp-live-1 {
+  float: left;
   position: relative;
-  height: 4.9rem;
-  width: 4.9rem;
-  margin-right: 0.2rem;
+  height: 150px;
+  width: 150px;
+  margin-right: 18px;
 }
 .programa-content-total .programa-content .pp-img1 {
   height: 100%;
@@ -182,22 +204,87 @@
   height: 100%;
   width: 100%;
 }
-.programa-content-total .programa-content .pp-img1 a {
-  display: block;
-  height: 0.9rem;
-  width: 0.9rem;
+.programa-content-total .programa-content .pp-live-title {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  background-image: url(../img/bf.png);
-  background-size: cover;
-  -webkit-transform: translateX(-0.45rem);
-  -moz-transform: translateX(-0.45rem);
-  -ms-transform: translateX(-0.45rem);
-  -o-transform: translateX(-0.45rem);
-  transform: translateX(-0.45rem) translateY(-0.45rem);
+  right: 0;
+  top: 8px;
+  height: 10px;
+  padding-right: 10px;
+  width: 50px;
 }
-.programa-content-total .programa-content .pp-img1 a img {
-  width: 0.9rem;
-  height: 0.9rem;
+.programa-content-total .programa-content .pp-live-title em {
+  float: left;
+  height: 4px;
+  width: 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 4px;
+  background-color: #d74c37;
+  border-radius: 50%;
+}
+.programa-content-total .programa-content .pp-live-title p {
+  float: left;
+  height: 10px;
+  line-height: 10px;
+  font-size: 10px;
+  color: #fff;
+}
+.programa-content-total .programa-content .middle-title {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 75px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+.programa-content-total .programa-content .comment {
+  width: 840px;
+  margin: 0 auto;
+}
+.programa-content-total .programa-content .comment ul {
+  width: 100%;
+}
+.programa-content-total .programa-content .comment ul li {
+  padding: 27px 30px 15px 30px;
+  width: 780px;
+  border-bottom: 1px solid #535353;
+}
+.programa-content-total .programa-content .comment ul li .comment-title {
+  height: 18px;
+}
+.programa-content-total .programa-content .comment ul li .comment-title em {
+  font-style: normal;
+  float: left;
+  line-height: 18px;
+  font-size: 18px;
+  color: #fff;
+}
+.programa-content-total .programa-content .comment ul li .comment-title span {
+  float: right;
+  line-height: 18px;
+  font-size: 16px;
+  color: #929292;
+}
+.programa-content-total .programa-content .comment ul li p {
+  width: 700px;
+  margin-top: 17px;
+  line-height: 15px;
+  font-size: 15px;
+  color: #fff;
+}
+.programa-content-total .programa-content .comment ul li .comment {
+  width: 100%;
+}
+.programa-content-total .programa-content .comment ul li .comment-img img {
+  height: 70px;
+  width: 70px;
+  margin-top: 15px;
+  margin-right: 10px;
+  float: left;
+  background-color: gold;
+}
+.programa-content-total .programa-content .comment ul li:after {
+  content: "";
+  display: block;
+  clear: both;
 }

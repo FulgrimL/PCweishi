@@ -23,6 +23,9 @@
 	}
 })(window);
 (function(a) {
+	
+	
+	
 	a.SewisePlayerSkin.IVodSkin = a.SewisePlayerSkin.IVodSkin || {
 		player: function() {},
 		started: function() {},
@@ -731,8 +734,8 @@
 			s.bind("touchend", F)
 		});
 		T.mousedown(function(a) {
-			o = a.pageY - a.target.getBoundingClientRect().top;
-			v = T.height();
+			o = a.pageX - a.target.getBoundingClientRect().left;
+			v = T.width();
 			w.css("height", o);
 			r.css("top", o - E / 2);
 			A = o / v;
@@ -743,8 +746,8 @@
 			this.blur();
 			M = b.pageX;
 			MH = b.pageY;
-			o = w.height();
-			v = T.height();
+			o = w.width();
+			v = T.width();
 			z.bind("mousemove", m);
 			a(document).bind("mouseup", p)
 		});
@@ -753,8 +756,8 @@
 			r.blur();
 			M =e.targetTouches[0].pageX;
 			MH = e.targetTouches[0].pageY;
-			o = w.height();
-			v = T.height();
+			o = w.width();
+			v = T.width();
 			r.bind("touchmove", u);
 			r.bind("touchend", G)
 		});

@@ -92,6 +92,9 @@ window.onload=function(){
 	})
 	$(".pmn-btn2").click(function(){
 		console.log("n-2");
+	});
+	$(".controlbar-volumeline").click(function(){
+		console.log(111112)
 	})
 
 	

@@ -150,12 +150,20 @@ div.sewise-player-ui div.controlbar div.controlbar-progress div.controlbar-progr
 	cursor: pointer;
 }
 
+
+/*音量*/
+
 div.sewise-player-ui div.controlbar ul.controlbar-btns div.controlbar-volumeline {
 	position: relative;
 	float: left;
 	width: 80px;
 	height: 20px;
 	top: 0px;
+	transform:rotate(90deg);
+	-ms-transform:rotate(180deg); 	/* IE 9 */
+	-moz-transform:rotate(180deg); 	/* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+	-o-transform:rotate(180deg); 
 }
 div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-volumeline-bg {
 	position: absolute;

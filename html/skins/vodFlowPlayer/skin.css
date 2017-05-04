@@ -46,8 +46,8 @@ div.sewise-player-ui div.controlbar div.controlbar-bg {
 	width: 100%;
 	top: 6px;
 	height: 60px;
-	background: black;
-	opacity: 0.4;
+	background: #292929;
+	opacity: 0.54;
 	//background: url("controlbar.png") 0px 0px repeat-x;
 	text-indent: -10000px;
 }
@@ -181,19 +181,21 @@ div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-norm
 }
 div.sewise-player-ui div.controlbar ul.controlbar-btns div.controlbar-volumeline {
 	position: absolute;
-	width: 50px;
-	height: 170px;
+	width: 48px;
+	height: 143px;
 	bottom: 0px;
 	right: 77px;
 	background-color: #343434;
+	border-top: 17px solid #343434;
+	/*transform: rotate(180deg);*/
 	border-radius: 4px;
 }
 div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-volumeline-bg {
 	position: absolute;
 	width: 4px !important;
-	height: 85px;
+	height: 84px;
 	left: 23px;
-	top: 17px;
+	top: 1px;
 	background-color: #565656;
 }
 div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-volumeline-volume {
@@ -201,24 +203,25 @@ div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-vol
 	width: 4px !important;
 	height: 42px;
 	left: 23px;
-	top: 7px;
+	top: 1px;
 	background-color: #fdd000;
 }
 div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-volumeline-dragger {
 	position: absolute;
 	width: 12px;
 	height: 85px;
-	top: 3px;
+	top: 7px;
 	left: 19px !important;
-	background: url("controlbar.png") 0px -212px repeat-x;
+	/*background: url("controlbar.png") 0px -212px repeat-x;*/
+	/*background-color: #565656;*/
 	cursor: pointer;
 }
 div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-volumeline-point {
 	position: absolute;
-	width: 12px;
-	height: 12px;
+	width: 14px;
+	height: 14px;
 	top: 50%;
-	left: 19px !important;
+	left: 18px !important;
 	border-radius: 50%;
 	background-color: #fdd000;
 	cursor: pointer;

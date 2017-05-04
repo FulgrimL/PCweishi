@@ -69,14 +69,14 @@
 					var b = this.time2FigFill(Math.floor(a / 3600)),
 						c = this.time2FigFill(a / 60 % 60),
 						a = this.time2FigFill(a % 60);
-					return b + "' " + c + "' " + a+ "\" "
+					return b + ":" + c + ":" + a+ ""
 				}
 			},
 			secondsToMS: function(a) {
 				if(!(0 > a)) {
 					var b = this.time2FigFill(a / 60),
 						a = this.time2FigFill(a % 60);
-					return b + "' " + a+ "\" "
+					return b + ":" + a+ ""
 				}
 			},
 			dateToTimeString: function(a) {

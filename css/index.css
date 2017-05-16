@@ -1,6 +1,9 @@
 .index-content-total{
 	width: 100%;
 }
+::-webkit-scrollbar {
+        display: none;
+    }
 	.index-content{
 		width: 840px;
 		margin: 0 auto;

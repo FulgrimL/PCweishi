@@ -1,10 +1,18 @@
 $(function(){
+	var liveContent = $(".live-content-total"),
+	indexContent = $(".index-content-total"),
+	vedioContent = $(".vedio-content"),
+	searchContent = $(".search-content");
+//	liveLi = $(".top-ul").find("li").eq(0);
+	
+
 	$(".index-mask").bind("mouseenter",function(){
-		$(this).slideUp();	
+		$(this).stop().slideUp();	
 	});
 	$("dt").bind("mouseleave",function(){
-		$(".index-mask").slideDown();
+		$(".index-mask").stop().slideDown();
 	});
+	
 	$(".top-ul").find("li").click(function(){
 		$(".top-ul").find("li").find("a").css("color","#fff");
 		$(".top-ul").find("li").find("em").css("display","none");
@@ -12,7 +20,25 @@ $(function(){
 		$(this).find("a").css("color","#fdd000");
 	});
 	
-	
+// index页面
+
+//	indexContent.hide();
+//	vedioContent.hide();
+//	searchContent.hide();
+//	$('.top-ul').find("li").bind("click",function(){
+//			liveContent.hide();
+//			indexContent.hide();
+//			vedioContent.hide();
+//			searchContent.hide();
+//		if ($(this).index() == 0) {
+//			liveContent.show();
+//		}else if($(this).index() == 1){
+//			indexContent.show();
+//		}else if($(this).index() == 2){
+//			vedioContent.show();
+//		}else if($(this).index() == 3){
+//			searchContent.show();}
+//	})
 	
 //	搜索页
 	$(".search-control").find("li").eq(0).click(function(){
@@ -32,27 +58,27 @@ $(function(){
 		$(".search-user").css("display","none");
 	});
 	$(".search-vedio").find("ul").find("li").bind("mouseenter",function(){
-		$(this).find(".search-mask,.search-vedio-ti").slideUp();	
+		$(this).find(".search-mask,.search-vedio-ti").stop().slideUp();	
 	}).end().bind("mouseleave",function(){
-		$(this).find(".search-mask,.search-vedio-ti").slideDown();
+		$(this).find(".search-mask,.search-vedio-ti").stop().slideDown();
 		console.log("111");
 	});
 	
 	
 // 视频页
 	$(".vedio").find("ul").find("li").bind("mouseenter",function(){
-		$(this).find(".vedio-mask,.vedio-ti").slideUp();	
+		$(this).find(".vedio-mask,.vedio-ti").stop().slideUp();	
 	}).end().bind("mouseleave",function(){
-		$(this).find(".vedio-mask,.vedio-ti").slideDown();
+		$(this).find(".vedio-mask,.vedio-ti").stop().slideDown();
 		console.log("111");
 	});
 
 //直播页
 	$(".live-mask").bind("mouseenter",function(){
-		$(this).slideUp();	
+		$(this).stop().slideUp();	
 	});
 	$("dt").bind("mouseleave",function(){
-		$(".live-mask").slideDown();
+		$(".live-mask").stop().slideDown();
 	});
 	
 	
@@ -112,11 +138,6 @@ var chatGj = false;
 		}
 
 	}
-//	,function(){
-
-//		console.log("2");
-//		
-//	}
 	)
 	
 	
@@ -125,7 +146,7 @@ var chatGj = false;
 
 	
 
-	var mySwiper = new Swiper('.pp-content', {
+var mySwiper = new Swiper('.pp-content', {
     freeMode : true,
     loop:false,
     prevButton:'.pmp-btn1',

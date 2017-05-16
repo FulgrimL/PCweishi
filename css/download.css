@@ -9,19 +9,29 @@ body {
   background-size: 100% 100% ;
   position: relative;
 }
+@media screen and (max-device-width: 1200px) {
+  body {
+    background-size: 1200px 680px ;
+  }
+}
 .top {
   background: none;
 }
-.dl-content {
-  margin: 0 auto;
-  width: 440px;
-  margin-top: 360px;
-  padding-top: 340px;
-  padding-right: 60px;
-  padding-left: 580px;
-  position: relative;
+.total-dl-content {
+  width: 1080px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -540px;
 }
-.dl-content .dl-img {
+.total-dl-content .dl-content {
+  width: 440px;
+  right: 0;
+  bottom: 38px;
+  position: absolute;
+  height: 230px;
+}
+.total-dl-content .dl-content .dl-img {
   position: absolute;
   width: 560px;
   background-image: url(../img/download-text.png);
@@ -30,7 +40,7 @@ body {
   bottom: 0;
   height: 230px;
 }
-.dl-content .dl-img img {
+.total-dl-content .dl-content .dl-img img {
   display: block;
   position: absolute;
   bottom: 0;

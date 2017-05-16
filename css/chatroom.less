@@ -8,7 +8,7 @@
         background-color: #292929;
         position: relative;
         .chat-left{
-        background-color: pink;
+        background-color: #292929;
         width: 216px;
         height: 224px;
         position: absolute;
@@ -96,7 +96,8 @@
             top: 26px;
             height: 560px;
             width: 314px;
-            background-color: #292929;
+            background-image: url(../img/chatroom.jpg);
+            background-size: cover;
         }
         
         .chat-right{
@@ -141,6 +142,18 @@
                 margin: 40px 0 0 223px;
                 border: 1px solid #fed000;
                 border-radius:15px ;
+                display: block !important;
+                position: relative;
+                img{
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-top: -11px;
+                    margin-left: -11px;
+                    height: 22px;
+                    width: 22px;
+                }
             }
             .chat-ipt{
                 height: 32px;

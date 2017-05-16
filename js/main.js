@@ -1,4 +1,4 @@
-window.onload=function(){
+$(function(){
 	$(".index-mask").bind("mouseenter",function(){
 		$(this).slideUp();	
 	});
@@ -95,10 +95,36 @@ window.onload=function(){
 	});
 	$(".controlbar-volumeline").click(function(){
 		console.log(111112)
-	})
+	});
+	
+	
+//聊天室
+var chatGj = false;
+	$(".chat-gj").click(function(){
+		chatGj = !chatGj;
+
+		if (!chatGj) {
+		$(this).find("img").attr("src","../img/good.png");
+		console.log(chatGj);
+		}else{
+		$(this).find("img").attr("src","../img/good2.png")
+		console.log(chatGj);
+		}
+
+	}
+//	,function(){
+
+//		console.log("2");
+//		
+//	}
+	)
+	
+	
+});
+	
 
 	
-}
+
 	var mySwiper = new Swiper('.pp-content', {
     freeMode : true,
     loop:false,

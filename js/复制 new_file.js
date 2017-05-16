@@ -1,0 +1,54 @@
+		t.push([e.id, ".vcp-player {    position: relative; z-index: 0;    font-family: Tahoma, '\\5FAE\\8F6F\\96C5\\9ED1', \\u5b8b\\u4f53,Verdana,Arial,sans-serif;    background-color: black;}.vcp-player video{    display: block;    overflow: hidden;}
+		.vcp-fullscreen.vcp-player, .vcp-fullscreen video {    width: 100%!important;    height: 100%!important;}/* 浼叏灞� */
+		body.vcp-full-window {    width: 100%!important;    height: 100%!important;    overflow-y: auto;}
+		.vcp-full-window .vcp-player {    position: fixed;    left: 0;    top: 0;}/* chrome flash 鎴愬姛鍔犺浇鍒癉OM涔嬪墠浼氶棯鐧藉睆锛屾墍浠ュ姞涓粦灞忛伄涓€閬� */
+		.vcp-pre-flash {    z-index: 1000; background: black; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+		.vcp-controls-panel {    position: absolute;    bottom: 0;    width: 100%;    font-size: 16px;    height: 3em;    z-index: 1000;}
+		.vcp-controls-panel.show{    -webkit-animation: fadeIn ease 0.8s;    animation: fadeIn ease 0.8s;    animation-fill-mode: forwards;    -webkit-animation-fill-mode: forwards;}
+		.vcp-controls-panel.hide{    -webkit-animation: fadeOut ease 0.8s;    animation: fadeOut ease 0.8s;    animation-fill-mode: forwards;    -webkit-animation-fill-mode: forwards;}
+		.vcp-panel-bg {    width: 100%;    height: 100%;    position: absolute;    left: 0;    top: 0;    background-color: rgb(36, 36, 36);    opacity: 0.8;    filter: alpha(opacity=80);    z-index: 1000;}
+		.vcp-playtoggle {    cursor: pointer;    position: relative;    z-index: 1001;    width: 3em;    height: 100%;    float: left;    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/play_btn.png);    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/play_btn.svg), none;}
+		.vcp-playtoggle:hover, .vcp-playtoggle:focus {    background-color: slategray;    opacity: 0.9;    filter: alpha(opacity=90);}
+		.touchable .vcp-playtoggle:hover {    background-color: transparent;    opacity: 1;}
+		.vcp-playing .vcp-playtoggle {    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/stop_btn.png);    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/stop_btn.svg), none;}
+		.vcp-bigplay {    width: 100%;    height: 80%; /*浼氶伄浣忓師鐢熸帶鍒舵爮*/    position: absolute;    background-color: white\\0;    filter: alpha(opacity=0); /*濂囨€殑IE8/9榧犳爣浜嬩欢绌块€�*/    opacity: 0;    z-index: 1000;    top: 0;    left: 0;}
+		.vcp-slider {    position: relative;    z-index: 1001;    float: left;    background: rgb(196, 196, 196);    height: 10px;    opacity: 0.8;    filter: alpha(opacity=80);    cursor: pointer;}
+		.vcp-slider .vcp-slider-track {    width: 0;    height: 100%;    margin-top: 0;    opacity: 1;    filter: alpha(opacity=100);    background-color: dodgerblue; /*beautiful blue*/}
+		.vcp-slider .vcp-slider-thumb {    cursor: pointer;    background-color: white;    position: absolute;    top: 0;    left: 0;    border-radius: 1em!important;    height: 10px;    margin-left: -5px;    width: 10px;}
+		.vcp-slider-vertical {    position: relative;    width: 0.5em;    height: 8em;    top: -5.6em;    z-index: 1001;    background-color: rgb(28, 28, 28);    opacity: 0.9;    filter: alpha(opacity=90);    cursor: pointer;}
+		.vcp-slider-vertical .vcp-slider-track {    background-color: rgb(18, 117, 207);    width: 0.5em;    height: 100%;    opacity: 0.8;    filter: alpha(opacity=80);}
+		.vcp-slider-vertical .vcp-slider-thumb {    cursor: pointer;    position: absolute;    background-color: aliceblue;    width: 0.8em;    height: 0.8em;    border-radius: 0.8em!important;    margin-top: -0.4em;    top: 0;    left: -0.15em;}/* 鏃堕棿绾�/杩涘害鏉� */
+		.vcp-timeline {    top: -10px;    left: 0;    height: 10px;    position: absolute;    z-index: 1001;    width: 100%;}
+		.vcp-timeline .vcp-slider-thumb {    top: -4px;}
+		.vcp-timeline .vcp-slider {    margin-top: 8px;    height: 2px;    width: 100%;}
+		.vcp-timeline:hover .vcp-slider {    margin-top: 0;    height: 10px;}
+		.vcp-timeline:hover .vcp-slider-thumb {    display: block;    width: 16px;    height: 16px;    top: -3px;    margin-left: -8px;}/* 鏃堕棿灞曠ず */
+		.vcp-timelabel {    display: inline-block;    line-height: 3em;    height: 3em;    width: 3em;    float: left;    color: white;    padding: 0 9px;    z-index: 1001;    position: relative;}/* 闊抽噺鎺у埗 */
+		.vcp-volume {    height: 3em;    width: 3em;    cursor: pointer;    position: relative;    z-index: 1001;    float: right;    background-color: transparent;    opacity: 0.9;    filter: alpha(opacity=90);}
+		.vcp-volume-icon {    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/volume.png);    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/volume.svg), none;    display: inline-block;    width: 3em;    height: 3em;    position: absolute;    left: 0;    top: 0;}
+		.vcp-volume-muted .vcp-volume-icon {    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/muted.png);    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/muted.svg), none;}
+		.vcp-volume .vcp-slider-vertical {    top: -8.4em;    left: 1em;    display: none;}
+		.vcp-volume .vcp-slider-track {    position: absolute;    bottom: 0;}
+		.vcp-volume:hover .vcp-slider-vertical {    display: block;}
+		.vcp-volume .vcp-volume-bg {    height: 8.8em;    width: 2em;    position: absolute;    left: 0.25em;    top: -8.8em;    background: rgb(36,36,36);    display: none;}
+		.vcp-volume:hover .vcp-volume-bg, .vcp-volume:hover .vcp-slider-vertical {    display: block;}/* 鍏ㄥ睆鎺т欢 */
+		.vcp-fullscreen-toggle {    position: relative;    width: 3em;    height: 3em;    float: right;    cursor: pointer;    z-index: 1001;    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/fullscreen.png);    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/fullscreen.svg), none;}
+		.vcp-fullscreen .vcp-fullscreen-toggle {    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/fullscreen_exit.png);    background-image: url(//imgcache.qq.com/open/qcloud/video/vcplayer/img/fullscreen_exit.svg), none;}
+		.vcp-loading {    position: absolute;    left: 50%;    top: 50%;    margin-top: -3em;    display: none;}
+		.vcp-poster {    position: absolute;    left: 0;    top: 0;    overflow: hidden;    z-index: 1000;    width: 100%;    height: 100%;    display: none;}
+		.vcp-poster-pic {    position: relative;}
+		.vcp-poster-pic.default{    left: 50%;    top: 50%;    -ms-transform: translate(-50%, -50%); /* IE 9 */    -webkit-transform: translate(-50%, -50%); /* Safari */    transform: translate(-50%, -50%);}
+		.vcp-poster-pic.cover{    width: 100%;    left: 50%;    top: 50%;    -ms-transform: translate(-50%, -50%); /* IE 9 */    -webkit-transform: translate(-50%, -50%); /* Safari */    transform: translate(-50%, -50%);}
+		.vcp-poster-pic.stretch{    width: 100%;    height: 100%;}
+		.vcp-error-tips {    position: absolute;    z-index: 1001;    width: 100%;    height: 4.5em;    left: 0;    top: 50%;    color: orangered;    margin-top: -5.25em;    text-align: center;    display: none;}
+		.vcp-clarityswitcher{    height: 3em;    width: 3em;    cursor: pointer;    position: relative;    z-index: 1001;    float: right;    background-color: transparent;    opacity: 0.9;}
+		.vcp-vertical-switcher-container{    width: 3em;    position: absolute;    left: 0em;    bottom: 2.4em;    background: rgb(36,36,36);    display: none;}
+		.vcp-vertical-switcher-current{    display: block;    color: #fff;    text-align: center;    line-height:3em;}
+		.vcp-vertical-switcher-item{    display: block;    color: #fff;    text-align: center;    line-height:2em;}
+		.vcp-vertical-switcher-item.current{    color: #888;}/* animations */
+		@-webkit-keyframes fadeOut {    from {        opacity: 1;    }    to {        opacity: 0;    }}
+		@keyframes fadeOut {    from {        opacity: 1;    }    to {        opacity: 0;    }}
+		.fadeOut {    -webkit-animation: fadeOut ease 0.8s;    animation: fadeOut ease 0.8s;    animation-fill-mode: forwards;    -webkit-animation-fill-mode: forwards;}
+		@-webkit-keyframes fadeIn {    from {        opacity: 0;    }    to {        opacity: 1;    }}
+		@keyframes fadeIn {    from {        opacity: 0;    }    to {        opacity: 1;    }}
+		.fadeIn {    -webkit-animation: fadeIn ease 0.8s;    animation: fadeIn ease 0.8s;    animation-fill-mode: forwards;    -webkit-animation-fill-mode: forwards;}", ""])
